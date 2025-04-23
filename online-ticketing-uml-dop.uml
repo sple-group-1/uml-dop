@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_A5hPYCA-EfCWToQGb7nneg" name="online-ticketing-uml-dop">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_A6_2ECA-EfCWToQGb7nneg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHsyA-EfCWToQGb7nneg" key="Version" value="0.0.4"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtCA-EfCWToQGb7nneg" key="Comment" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtSA-EfCWToQGb7nneg" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtiA-EfCWToQGb7nneg" key="Date" value="2024-10-21"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtyA-EfCWToQGb7nneg" key="Author" value=""/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsSA-EfCWToQGb7nneg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+  </profileApplication>
+</uml:Model>

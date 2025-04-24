@@ -23,6 +23,51 @@
       <packagedElement xmi:type="uml:DataType" xmi:id="__u4koCCzEfCTVfc_I9vAmg" name="HashMap&lt;String, Object>"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_B7Jn4CC0EfCTVfc_I9vAmg" name="DateTime"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_EWlIgCC0EfCTVfc_I9vAmg" name="UUID"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_S07xACDLEfCf3YcdppMP9A" name="MBlog">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_b1AqYCDLEfCf3YcdppMP9A" name="Blog"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_g8ru0CDLEfCf3YcdppMP9A" name="BlogImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_q_45ICDLEfCf3YcdppMP9A" name="id" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_F7XBECDMEfCf3YcdppMP9A" name="title" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MAtOsCDMEfCf3YcdppMP9A" name="content">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8HQNQCDMEfCf3YcdppMP9A" name="createdAt" type="_4-kucCCzEfCTVfc_I9vAmg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_fvATYCDOEfCf3YcdppMP9A" client="_g8ru0CDLEfCf3YcdppMP9A" supplier="_b1AqYCDLEfCf3YcdppMP9A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_FVs50CDNEfCf3YcdppMP9A" name="DLikeBlog">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LjvJYCDNEfCf3YcdppMP9A" name="BlogImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZbnfMCDNEfCf3YcdppMP9A" name="likeCount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2z-D0CDOEfCf3YcdppMP9A" name="blogimpl" type="_g8ru0CDLEfCf3YcdppMP9A" association="_2z7AgCDOEfCf3YcdppMP9A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2z-q4CDOEfCf3YcdppMP9A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2z_R8CDOEfCf3YcdppMP9A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GdxYUCDREfCf3YcdppMP9A" name="customerimpl" type="_yn6goCCuEfCTVfc_I9vAmg" association="_GdmZMCDREfCf3YcdppMP9A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gd3e8CDREfCf3YcdppMP9A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GeAo4CDREfCf3YcdppMP9A" value="*"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3FNaQCDNEfCf3YcdppMP9A" name="Like"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2z7AgCDOEfCf3YcdppMP9A" memberEnd="_2z-D0CDOEfCf3YcdppMP9A _2z_R8SDOEfCf3YcdppMP9A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2z8OoCDOEfCf3YcdppMP9A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2z8OoSDOEfCf3YcdppMP9A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2z_R8SDOEfCf3YcdppMP9A" name="blogimpl" type="_LjvJYCDNEfCf3YcdppMP9A" association="_2z7AgCDOEfCf3YcdppMP9A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GdmZMCDREfCf3YcdppMP9A" memberEnd="_GdxYUCDREfCf3YcdppMP9A _GeDFICDREfCf3YcdppMP9A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GduVACDREfCf3YcdppMP9A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GdvjICDREfCf3YcdppMP9A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GeDFICDREfCf3YcdppMP9A" name="blogimpl" type="_LjvJYCDNEfCf3YcdppMP9A" association="_GdmZMCDREfCf3YcdppMP9A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nP6YsCDREfCf3YcdppMP9A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cq-msCDSEfCf3YcdppMP9A" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">
@@ -40,4 +85,10 @@
   </uml:Model>
   <umlvmprofile:vm xmi:id="_CnplsCCtEfCqz8JqMevbGg" base_Package="_8irLgCCsEfCqz8JqMevbGg"/>
   <umlvmprofile:module xmi:id="_mzooACCzEfCTVfc_I9vAmg" base_Package="_3n1MsCCtEfCTVfc_I9vAmg"/>
+  <umlvmprofile:module xmi:id="_ZJ0PcCDLEfCf3YcdppMP9A" base_Package="_S07xACDLEfCf3YcdppMP9A"/>
+  <umlvmprofile:delta xmi:id="_KGIi8CDNEfCf3YcdppMP9A" base_Package="_FVs50CDNEfCf3YcdppMP9A"/>
+  <umlvmprofile:modifiedClass xmi:id="_UyyS4CDNEfCf3YcdppMP9A" base_Class="_LjvJYCDNEfCf3YcdppMP9A"/>
+  <umlvmprofile:adds xmi:id="_lnKPACDNEfCf3YcdppMP9A" base_Property="_ZbnfMCDNEfCf3YcdppMP9A"/>
+  <umlvmprofile:adds xmi:id="_9eOKwCDNEfCf3YcdppMP9A" base_Operation="_3FNaQCDNEfCf3YcdppMP9A"/>
+  <umlvmprofile:modifies xmi:id="_6mBZICDOEfCf3YcdppMP9A" base_Association="_2z7AgCDOEfCf3YcdppMP9A"/>
 </xmi:XMI>

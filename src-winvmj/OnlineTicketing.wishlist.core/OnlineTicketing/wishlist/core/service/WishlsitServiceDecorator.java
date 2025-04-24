@@ -1,0 +1,49 @@
+package OnlineTicketing.wishlist.core;
+import java.util.*;
+
+import vmj.routing.route.VMJExchange;
+
+public abstract class WishlsitServiceDecorator extends WishlsitServiceComponent{
+	protected WishlsitServiceComponent record;
+
+    public WishlsitServiceDecorator(WishlsitServiceComponent record) {
+        this.record = record;
+    }
+
+	public WishlsitImpl createWishlist(Map<String, Object> requestBody){
+		return record.createWishlist(requestBody);
+	}
+
+    public Wishlist createWishlist(Map<String, Object> requestBody, Map<String, Object> response){
+		return record.createWishlist(requestBody, response);
+	}
+
+	public HashMap<String, Object> getWishlist(Map<String, Object> requestBody){
+		return record.getWishlist(requestBody);
+	}
+
+	public List<HashMap<String,Object>> getAllWishlist(Map<String, Object> requestBody){
+		return record.getAllWishlist(requestBody);
+	}
+
+    public List<HashMap<String,Object>> saveWishlist(VMJExchange vmjExchange){
+		return record.saveWishlist(vmjExchange);
+	}
+
+    public HashMap<String, Object> updateWishlist(Map<String, Object> requestBody){
+		return record.updateWishlist(requestBody);
+	}
+
+    public List<HashMap<String,Object>> transformListToHashMap(List<Wishlist> List){
+		return record.transformListToHashMap(List);
+	}
+
+    public List<HashMap<String,Object>> deleteWishlist(Map<String, Object> requestBody){
+		return record.deleteWishlist(requestBody);
+	}
+
+	public HashMap<String, Object> getWishlistById(int id){
+        return record.getWishlistById(id);
+    }
+
+}

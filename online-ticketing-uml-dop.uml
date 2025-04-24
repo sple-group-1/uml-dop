@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_A5hPYCA-EfCWToQGb7nneg" name="online-ticketing-uml-dop">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_A6_2ECA-EfCWToQGb7nneg">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHsyA-EfCWToQGb7nneg" key="Version" value="0.0.4"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtCA-EfCWToQGb7nneg" key="Comment" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtSA-EfCWToQGb7nneg" key="Copyright" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtiA-EfCWToQGb7nneg" key="Date" value="2024-10-21"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtyA-EfCWToQGb7nneg" key="Author" value=""/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsSA-EfCWToQGb7nneg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
-  </profileApplication>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg">
+  <uml:Model xmi:id="_A5hPYCA-EfCWToQGb7nneg" name="online-ticketing-uml-dop">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_A6_2ECA-EfCWToQGb7nneg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8irLgCCsEfCqz8JqMevbGg" name="OnlineTicketing">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3n1MsCCtEfCTVfc_I9vAmg" name="MCustomer">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TIUGMCCuEfCTVfc_I9vAmg" name="Customer"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yn6goCCuEfCTVfc_I9vAmg" name="CustomerImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ev8VoCCyEfCTVfc_I9vAmg" name="id" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Tx1AcCCyEfCTVfc_I9vAmg" name="email">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WO0AQCCyEfCTVfc_I9vAmg" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rQvFcCCzEfCTVfc_I9vAmg" client="_yn6goCCuEfCTVfc_I9vAmg" supplier="_TIUGMCCuEfCTVfc_I9vAmg" contract="_TIUGMCCuEfCTVfc_I9vAmg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_4-kucCCzEfCTVfc_I9vAmg" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_91sOYCCzEfCTVfc_I9vAmg" name="VMJExchange"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="__u4koCCzEfCTVfc_I9vAmg" name="HashMap&lt;String, Object>"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_B7Jn4CC0EfCTVfc_I9vAmg" name="DateTime"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EWlIgCC0EfCTVfc_I9vAmg" name="UUID"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHsyA-EfCWToQGb7nneg" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtCA-EfCWToQGb7nneg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtSA-EfCWToQGb7nneg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtiA-EfCWToQGb7nneg" key="Date" value="2024-10-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHtyA-EfCWToQGb7nneg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsSA-EfCWToQGb7nneg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_CnplsCCtEfCqz8JqMevbGg" base_Package="_8irLgCCsEfCqz8JqMevbGg"/>
+  <umlvmprofile:module xmi:id="_mzooACCzEfCTVfc_I9vAmg" base_Package="_3n1MsCCtEfCTVfc_I9vAmg"/>
+</xmi:XMI>

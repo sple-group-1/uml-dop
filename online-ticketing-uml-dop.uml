@@ -53,7 +53,7 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3FNaQCDNEfCf3YcdppMP9A" name="Like"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_kb7RUCDVEfCXKsLM5KbBlw" name="MBooking">
+      <packagedElement xmi:type="uml:Package" xmi:id="_kb7RUCDVEfCXKsLM5KbBlw" name="MBookingItem">
         <packagedElement xmi:type="uml:Interface" xmi:id="_72WUYCDVEfCXKsLM5KbBlw" name="BookingItem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_B1HmoCDbEfCXKsLM5KbBlw" name="BookingItemImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JVVPwCDbEfCXKsLM5KbBlw" name="id" visibility="protected" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
@@ -63,7 +63,7 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_3sVKACDgEfCXKsLM5KbBlw" client="_B1HmoCDbEfCXKsLM5KbBlw" supplier="_72WUYCDVEfCXKsLM5KbBlw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_BHW6ACDhEfCXKsLM5KbBlw" name="DHotelBooking">
+      <packagedElement xmi:type="uml:Package" xmi:id="_BHW6ACDhEfCXKsLM5KbBlw" name="DHotel">
         <packagedElement xmi:type="uml:Class" xmi:id="_IdMfICDhEfCXKsLM5KbBlw" name="BookingItemImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZO_BUCDhEfCXKsLM5KbBlw" name="title" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -81,7 +81,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JRwtoSD3EfCXKsLM5KbBlw" value="*"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_bFUIcCDvEfCXKsLM5KbBlw" name="RoomOption">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bFUIcCDvEfCXKsLM5KbBlw" name="RoomOptionImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vMQokCDvEfCXKsLM5KbBlw" name="id" visibility="protected" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_zU9jUCDvEfCXKsLM5KbBlw" name="name" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -90,9 +90,12 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_RlmKECENEfCz_ZvROJ6C6w" name="RoomOption"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_f_QXQCENEfCz_ZvROJ6C6w" client="_bFUIcCDvEfCXKsLM5KbBlw" supplier="_RlmKECENEfCz_ZvROJ6C6w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_s0MIsCEVEfCz_ZvROJ6C6w" client="_BHW6ACDhEfCXKsLM5KbBlw" supplier="_kb7RUCDVEfCXKsLM5KbBlw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_ABjTECDiEfCXKsLM5KbBlw" name="List&lt;String>"/>
-      <packagedElement xmi:type="uml:Package" xmi:id="_EU0r0CDyEfCXKsLM5KbBlw" name="DFlightBooking">
+      <packagedElement xmi:type="uml:Package" xmi:id="_EU0r0CDyEfCXKsLM5KbBlw" name="DFlight">
         <packagedElement xmi:type="uml:Class" xmi:id="_U9MzUCDyEfCXKsLM5KbBlw" name="BookingItemImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_w85_cCDyEfCXKsLM5KbBlw" name="departureLocation" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -111,14 +114,17 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_rcXLMiD2EfCXKsLM5KbBlw" type="_b0Y4ICDzEfCXKsLM5KbBlw" association="_rcWkICD2EfCXKsLM5KbBlw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_b0Y4ICDzEfCXKsLM5KbBlw" name="Airline">
+        <packagedElement xmi:type="uml:Class" xmi:id="_b0Y4ICDzEfCXKsLM5KbBlw" name="AirlineImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_y5NCICD0EfCXKsLM5KbBlw" name="id" visibility="protected" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1j3RkCD0EfCXKsLM5KbBlw" name="name" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_twg9ICEMEfCz_ZvROJ6C6w" name="Airline"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_3Rdu8CEMEfCz_ZvROJ6C6w" client="_b0Y4ICDzEfCXKsLM5KbBlw" supplier="_twg9ICEMEfCz_ZvROJ6C6w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_7oAb8CENEfCz_ZvROJ6C6w" client="_EU0r0CDyEfCXKsLM5KbBlw" supplier="_kb7RUCDVEfCXKsLM5KbBlw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_MA8ioCD1EfCXKsLM5KbBlw" name="DEventBooking">
+      <packagedElement xmi:type="uml:Package" xmi:id="_MA8ioCD1EfCXKsLM5KbBlw" name="DEvent">
         <packagedElement xmi:type="uml:Class" xmi:id="_agGT0CD1EfCXKsLM5KbBlw" name="BookingItemImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jdE14CD1EfCXKsLM5KbBlw" name="title" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -139,7 +145,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d1P_1CD3EfCXKsLM5KbBlw" value="*"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_0UUf0CD1EfCXKsLM5KbBlw" name="PackageOption">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0UUf0CD1EfCXKsLM5KbBlw" name="PackageOptionImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZVYiQCD3EfCXKsLM5KbBlw" name="id" visibility="protected" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZVdawCD3EfCXKsLM5KbBlw" name="price" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
@@ -148,6 +154,9 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_9UihICELEfCz_ZvROJ6C6w" name="PackageOption"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_Aen3gCEMEfCz_ZvROJ6C6w" client="_0UUf0CD1EfCXKsLM5KbBlw" supplier="_9UihICELEfCz_ZvROJ6C6w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_b0DXkCEMEfCz_ZvROJ6C6w" client="_MA8ioCD1EfCXKsLM5KbBlw" supplier="_kb7RUCDVEfCXKsLM5KbBlw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_7sJsMCD5EfCTVfc_I9vAmg" name="MOrder">
         <packagedElement xmi:type="uml:Interface" xmi:id="_-WdWUCD5EfCTVfc_I9vAmg" name="Order"/>
@@ -287,4 +296,9 @@
   <umlvmprofile:adds xmi:id="_PpT7ACD2EfCXKsLM5KbBlw" base_Property="_LnWBwCDzEfCXKsLM5KbBlw"/>
   <umlvmprofile:adds xmi:id="_RQukwCD2EfCXKsLM5KbBlw" base_Property="_Hmt9kCD2EfCXKsLM5KbBlw"/>
   <umlvmprofile:module xmi:id="_94zxACD5EfCTVfc_I9vAmg" base_Package="_7sJsMCD5EfCTVfc_I9vAmg"/>
+  <umlvmprofile:uses xmi:id="_lgbWQCEMEfCz_ZvROJ6C6w" base_Dependency="_b0DXkCEMEfCz_ZvROJ6C6w"/>
+  <umlvmprofile:addedInterface xmi:id="_GuBjkCENEfCz_ZvROJ6C6w" base_Interface="_9UihICELEfCz_ZvROJ6C6w"/>
+  <umlvmprofile:addedInterface xmi:id="_H3GEcCENEfCz_ZvROJ6C6w" base_Interface="_twg9ICEMEfCz_ZvROJ6C6w"/>
+  <umlvmprofile:uses xmi:id="_9eVrcCENEfCz_ZvROJ6C6w" base_Dependency="_7oAb8CENEfCz_ZvROJ6C6w"/>
+  <umlvmprofile:uses xmi:id="_t6NVkCEVEfCz_ZvROJ6C6w" base_Dependency="_s0MIsCEVEfCz_ZvROJ6C6w"/>
 </xmi:XMI>

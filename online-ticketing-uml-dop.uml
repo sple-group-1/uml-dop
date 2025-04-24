@@ -174,6 +174,30 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xH4mwCD6EfCTVfc_I9vAmg" client="_BW5BcCD6EfCTVfc_I9vAmg" supplier="_-WdWUCD5EfCTVfc_I9vAmg" contract="_-WdWUCD5EfCTVfc_I9vAmg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_k4YlYCE5EfC0z_Zbk-HEuQ" name="MCart">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qT7BACE5EfC0z_Zbk-HEuQ" name="Cart"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vE7R4CE5EfC0z_Zbk-HEuQ" name="CartImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yO-zECE5EfC0z_Zbk-HEuQ" name="id" visibility="public" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0A1LMCE5EfC0z_Zbk-HEuQ" name="total">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_20phMiE6EfC0z_Zbk-HEuQ" name="customerimpl" type="_yn6goCCuEfCTVfc_I9vAmg" association="_20o6ICE6EfC0z_Zbk-HEuQ"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_7Th8wCE5EfC0z_Zbk-HEuQ" client="_vE7R4CE5EfC0z_Zbk-HEuQ" supplier="_qT7BACE5EfC0z_Zbk-HEuQ" contract="_qT7BACE5EfC0z_Zbk-HEuQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__Q5KMCE5EfC0z_Zbk-HEuQ" name="CartItemImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J1DFcCE6EfC0z_Zbk-HEuQ" name="id" visibility="public" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RJHI8iE6EfC0z_Zbk-HEuQ" name="bookingitemimpl" type="_B1HmoCDbEfCXKsLM5KbBlw" association="_RJGh4CE6EfC0z_Zbk-HEuQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XmD-QCE6EfC0z_Zbk-HEuQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WTIWwCE6EfC0z_Zbk-HEuQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_s-YmsiE6EfC0z_Zbk-HEuQ" name="cartimpl" type="_vE7R4CE5EfC0z_Zbk-HEuQ" association="_s-X_oCE6EfC0z_Zbk-HEuQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-YmsyE6EfC0z_Zbk-HEuQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-YmtCE6EfC0z_Zbk-HEuQ" value="*"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_FS5v8CE6EfC0z_Zbk-HEuQ" client="__Q5KMCE5EfC0z_Zbk-HEuQ" supplier="_CdSNsCE6EfC0z_Zbk-HEuQ" contract="_CdSNsCE6EfC0z_Zbk-HEuQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CdSNsCE6EfC0z_Zbk-HEuQ" name="CartItem"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2z7AgCDOEfCf3YcdppMP9A" visibility="protected" memberEnd="_2z-D0CDOEfCf3YcdppMP9A _2z_R8SDOEfCf3YcdppMP9A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2z8OoCDOEfCf3YcdppMP9A" source="org.eclipse.papyrus">
@@ -240,6 +264,27 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_h-KjsiD8EfCTVfc_I9vAmg" name="orderimpl" type="_BW5BcCD6EfCTVfc_I9vAmg" association="_h-JVkCD8EfCTVfc_I9vAmg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RJGh4CE6EfC0z_Zbk-HEuQ" memberEnd="_RJHI8iE6EfC0z_Zbk-HEuQ _RJJlMCE6EfC0z_Zbk-HEuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RJHI8CE6EfC0z_Zbk-HEuQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RJHI8SE6EfC0z_Zbk-HEuQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RJJlMCE6EfC0z_Zbk-HEuQ" name="cartitemimpl" type="__Q5KMCE5EfC0z_Zbk-HEuQ" association="_RJGh4CE6EfC0z_Zbk-HEuQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zz9ZMCE6EfC0z_Zbk-HEuQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zf2KYCE6EfC0z_Zbk-HEuQ" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s-X_oCE6EfC0z_Zbk-HEuQ" memberEnd="_s-YmsiE6EfC0z_Zbk-HEuQ _s-YmtSE6EfC0z_Zbk-HEuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s-YmsCE6EfC0z_Zbk-HEuQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s-YmsSE6EfC0z_Zbk-HEuQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_s-YmtSE6EfC0z_Zbk-HEuQ" name="cartitemimpl" type="__Q5KMCE5EfC0z_Zbk-HEuQ" association="_s-X_oCE6EfC0z_Zbk-HEuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_20o6ICE6EfC0z_Zbk-HEuQ" memberEnd="_20phMiE6EfC0z_Zbk-HEuQ _20phNSE6EfC0z_Zbk-HEuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_20phMCE6EfC0z_Zbk-HEuQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_20phMSE6EfC0z_Zbk-HEuQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_20phNSE6EfC0z_Zbk-HEuQ" name="cartimpl" type="_vE7R4CE5EfC0z_Zbk-HEuQ" association="_20o6ICE6EfC0z_Zbk-HEuQ"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHsyA-EfCWToQGb7nneg" key="Version" value="0.0.4"/>
@@ -301,4 +346,5 @@
   <umlvmprofile:addedInterface xmi:id="_H3GEcCENEfCz_ZvROJ6C6w" base_Interface="_twg9ICEMEfCz_ZvROJ6C6w"/>
   <umlvmprofile:uses xmi:id="_9eVrcCENEfCz_ZvROJ6C6w" base_Dependency="_7oAb8CENEfCz_ZvROJ6C6w"/>
   <umlvmprofile:uses xmi:id="_t6NVkCEVEfCz_ZvROJ6C6w" base_Dependency="_s0MIsCEVEfCz_ZvROJ6C6w"/>
+  <umlvmprofile:module xmi:id="_oN03MCE5EfC0z_Zbk-HEuQ" base_Package="_k4YlYCE5EfC0z_Zbk-HEuQ"/>
 </xmi:XMI>

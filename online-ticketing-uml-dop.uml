@@ -56,20 +56,17 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_VGo4oCDxEfC06ZDuNytBng" name="MWishlist">
         <packagedElement xmi:type="uml:Interface" xmi:id="_7bsH8CDxEfC06ZDuNytBng" name="Collection"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_JmUaoCDyEfC06ZDuNytBng" name="CollectionImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_3vG2kCDzEfC06ZDuNytBng" name="id" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3vG2kCDzEfC06ZDuNytBng" name="collectionId" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KwmfoCD2EfC06ZDuNytBng" name="title" visibility="public" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jiP0UCD2EfC06ZDuNytBng" name="createdAt" visibility="public" type="_4-kucCCzEfCTVfc_I9vAmg"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zYDPYCD2EfC06ZDuNytBng" name="userId" type="_EWlIgCC0EfCTVfc_I9vAmg" isUnique="false" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_puNK0CD3EfC06ZDuNytBng" name="customerimpl" type="_yn6goCCuEfCTVfc_I9vAmg" association="_puKukCD3EfC06ZDuNytBng"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cUJukCD5EfC06ZDuNytBng" client="_JmUaoCDyEfC06ZDuNytBng" supplier="_7bsH8CDxEfC06ZDuNytBng" contract="_7bsH8CDxEfC06ZDuNytBng"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_RBCfwCDyEfC06ZDuNytBng" name="Wishlist"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_VYzxQCDyEfC06ZDuNytBng" name="WishlistImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZX_U4CD4EfC06ZDuNytBng" name="id" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aQ2PgCD4EfC06ZDuNytBng" name="bookingId" type="_EWlIgCC0EfCTVfc_I9vAmg" isUnique="false" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aWDfoCD4EfC06ZDuNytBng" name="collectionId" type="_EWlIgCC0EfCTVfc_I9vAmg" isUnique="false" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZX_U4CD4EfC06ZDuNytBng" name="wishlistId" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_bg2e0CD4EfC06ZDuNytBng" name="addedAt" type="_4-kucCCzEfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_o5iXMiD4EfC06ZDuNytBng" name="collectionimpl" type="_JmUaoCDyEfC06ZDuNytBng" association="_o5hwICD4EfC06ZDuNytBng"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cw8YQCD5EfC06ZDuNytBng" client="_VYzxQCDyEfC06ZDuNytBng" supplier="_RBCfwCDyEfC06ZDuNytBng" contract="_RBCfwCDyEfC06ZDuNytBng"/>

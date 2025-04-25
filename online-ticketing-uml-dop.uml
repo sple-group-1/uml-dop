@@ -8,7 +8,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_3n1MsCCtEfCTVfc_I9vAmg" name="MCustomer">
         <packagedElement xmi:type="uml:Interface" xmi:id="_TIUGMCCuEfCTVfc_I9vAmg" name="Customer"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_yn6goCCuEfCTVfc_I9vAmg" name="CustomerImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ev8VoCCyEfCTVfc_I9vAmg" name="id" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ev8VoCCyEfCTVfc_I9vAmg" name="customerId" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Tx1AcCCyEfCTVfc_I9vAmg" name="email">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -166,7 +166,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_7sJsMCD5EfCTVfc_I9vAmg" name="MOrder">
         <packagedElement xmi:type="uml:Interface" xmi:id="_-WdWUCD5EfCTVfc_I9vAmg" name="Order"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_BW5BcCD6EfCTVfc_I9vAmg" name="OrderImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_J3o6gCD6EfCTVfc_I9vAmg" name="id" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J3o6gCD6EfCTVfc_I9vAmg" name="orderId" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_T7Y3YCD6EfCTVfc_I9vAmg" name="createdAt" type="_B7Jn4CC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ylL1wCD7EfCTVfc_I9vAmg" name="amount">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -283,19 +283,17 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_As6VoCHREfCcw4vRG08oew" name="BookingAvailbilityImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_O9KIICHREfCcw4vRG08oew" name="id" visibility="protected" type="_EWlIgCC0EfCTVfc_I9vAmg" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_isaEgCHSEfCcw4vRG08oew" name="quota" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pgrNoCHSEfCcw4vRG08oew" name="available" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_vsgdwCHSEfCcw4vRG08oew" client="_As6VoCHREfCcw4vRG08oew" supplier="_-SjzECHQEfCcw4vRG08oew"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_ASR9MCHTEfCcw4vRG08oew" name="DDailyAvailability">
         <packagedElement xmi:type="uml:Class" xmi:id="_Yvw_wCHTEfCcw4vRG08oew" name="BookingAvailabilityImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_y8aS0CHTEfCcw4vRG08oew" name="date" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_y8aS0CHTEfCcw4vRG08oew" name="date" visibility="protected" type="_4-kucCCzEfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ohBnICHVEfCcw4vRG08oew" type="_As6VoCHREfCcw4vRG08oew" association="_og-j0CHVEfCcw4vRG08oew">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohBnISHVEfCcw4vRG08oew"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohBnIiHVEfCcw4vRG08oew" value="1"/>

@@ -171,6 +171,11 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fhfF4yD8EfCTVfc_I9vAmg" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_h-J8oiD8EfCTVfc_I9vAmg" name="bookingitemimpl" type="_B1HmoCDbEfCXKsLM5KbBlw" association="_h-JVkCD8EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6aWssCFzEfCTVfc_I9vAmg" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9TKs4CFzEfCTVfc_I9vAmg" name="startDate" type="_4-kucCCzEfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_A3bd0CF0EfCTVfc_I9vAmg" name="endDate" type="_4-kucCCzEfCTVfc_I9vAmg"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xH4mwCD6EfCTVfc_I9vAmg" client="_BW5BcCD6EfCTVfc_I9vAmg" supplier="_-WdWUCD5EfCTVfc_I9vAmg" contract="_-WdWUCD5EfCTVfc_I9vAmg"/>
         </packagedElement>
       </packagedElement>

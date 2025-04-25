@@ -241,6 +241,30 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9_EuoSGJEfCb972WowPcIw" client="_9_EuoCGJEfCb972WowPcIw" supplier="_uq7hECGHEfCb972WowPcIw" contract="_uq7hECGHEfCb972WowPcIw"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_7NdccCGmEfCOfc_TgUKvxw" name="MReview">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_GfS9ECGnEfCOfc_TgUKvxw" name="Review"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LkxpICGnEfCOfc_TgUKvxw" name="ReviewImpl" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_o4LRwCGnEfCOfc_TgUKvxw" name="reviewId" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_va7NECGnEfCOfc_TgUKvxw" name="reviewContent" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DiVnQCGoEfCOfc_TgUKvxw" name="createdAt" type="_4-kucCCzEfCTVfc_I9vAmg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nDZ2kiGpEfCOfc_TgUKvxw" name="customerimpl" type="_yn6goCCuEfCTVfc_I9vAmg" association="_nDZPgCGpEfCOfc_TgUKvxw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3RBUsiGpEfCOfc_TgUKvxw" name="bookingitemimpl" type="_B1HmoCDbEfCXKsLM5KbBlw" association="_3RAtoCGpEfCOfc_TgUKvxw"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TZRgMCGnEfCOfc_TgUKvxw" client="_LkxpICGnEfCOfc_TgUKvxw" supplier="_GfS9ECGnEfCOfc_TgUKvxw" contract="_GfS9ECGnEfCOfc_TgUKvxw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_z5kGICGoEfCOfc_TgUKvxw" name="DReviewRating">
+        <packagedElement xmi:type="uml:Class" xmi:id="_-QD_4CGoEfCOfc_TgUKvxw" name="ReviewImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GpvnoCGpEfCOfc_TgUKvxw" name="reviewimpl" type="_LkxpICGnEfCOfc_TgUKvxw" association="_GprWMCGpEfCOfc_TgUKvxw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gpw1wCGpEfCOfc_TgUKvxw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gpyq8CGpEfCOfc_TgUKvxw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UkmY8CGpEfCOfc_TgUKvxw" name="rating" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2z7AgCDOEfCf3YcdppMP9A" visibility="protected" memberEnd="_2z-D0CDOEfCf3YcdppMP9A _2z_R8SDOEfCf3YcdppMP9A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2z8OoCDOEfCf3YcdppMP9A" source="org.eclipse.papyrus">
@@ -367,6 +391,30 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zjAtgCGLEfCb972WowPcIw" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GprWMCGpEfCOfc_TgUKvxw" memberEnd="_GpvnoCGpEfCOfc_TgUKvxw _GpzSACGpEfCOfc_TgUKvxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GpuZgCGpEfCOfc_TgUKvxw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GpuZgSGpEfCOfc_TgUKvxw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GpzSACGpEfCOfc_TgUKvxw" name="reviewimpl" type="_-QD_4CGoEfCOfc_TgUKvxw" association="_GprWMCGpEfCOfc_TgUKvxw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nDZPgCGpEfCOfc_TgUKvxw" visibility="package" memberEnd="_nDZ2kiGpEfCOfc_TgUKvxw _nDc54CGpEfCOfc_TgUKvxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nDZ2kCGpEfCOfc_TgUKvxw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nDZ2kSGpEfCOfc_TgUKvxw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nDc54CGpEfCOfc_TgUKvxw" name="reviewimpl" type="_LkxpICGnEfCOfc_TgUKvxw" association="_nDZPgCGpEfCOfc_TgUKvxw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_siD3oCGpEfCOfc_TgUKvxw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_siWLgCGpEfCOfc_TgUKvxw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3RAtoCGpEfCOfc_TgUKvxw" memberEnd="_3RBUsiGpEfCOfc_TgUKvxw _3RB7wiGpEfCOfc_TgUKvxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3RBUsCGpEfCOfc_TgUKvxw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3RBUsSGpEfCOfc_TgUKvxw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_3RB7wiGpEfCOfc_TgUKvxw" name="reviewimpl" type="_LkxpICGnEfCOfc_TgUKvxw" association="_3RAtoCGpEfCOfc_TgUKvxw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ChN2kCGqEfCOfc_TgUKvxw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ChQ54CGqEfCOfc_TgUKvxw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A6VHsyA-EfCWToQGb7nneg" key="Version" value="0.0.4"/>
@@ -436,4 +484,9 @@
   <umlvmprofile:modifies xmi:id="_2cbnICGKEfCb972WowPcIw" base_Association="_aU57wCGKEfCb972WowPcIw"/>
   <umlvmprofile:modifiedClass xmi:id="_I4_CACGLEfCb972WowPcIw" base_Class="_9_EuoCGJEfCb972WowPcIw"/>
   <umlvmprofile:modifiedClass xmi:id="_Jw0B4CGLEfCb972WowPcIw" base_Class="_BVoawCGKEfCb972WowPcIw"/>
+  <umlvmprofile:module xmi:id="_BHrYICGnEfCOfc_TgUKvxw" base_Package="_7NdccCGmEfCOfc_TgUKvxw"/>
+  <umlvmprofile:delta xmi:id="_7xazMCGoEfCOfc_TgUKvxw" base_Package="_z5kGICGoEfCOfc_TgUKvxw"/>
+  <umlvmprofile:modifiedClass xmi:id="_DM_z8CGpEfCOfc_TgUKvxw" base_Class="_-QD_4CGoEfCOfc_TgUKvxw"/>
+  <umlvmprofile:modifies xmi:id="_Kxm04CGpEfCOfc_TgUKvxw" base_Association="_GprWMCGpEfCOfc_TgUKvxw"/>
+  <umlvmprofile:adds xmi:id="_b361kCGpEfCOfc_TgUKvxw" base_Property="_UkmY8CGpEfCOfc_TgUKvxw"/>
 </xmi:XMI>

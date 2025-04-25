@@ -1086,6 +1086,10 @@
                 <element xmi:type="uml:Property" href="online-ticketing-uml-dop.uml#_LyD3YCHMEfC7j5ziKZetqQ"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_LzDV4SHMEfC7j5ziKZetqQ"/>
               </children>
+              <children xmi:type="notation:Shape" xmi:id="_A7AjYCHOEfC7j5ziKZetqQ" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="online-ticketing-uml-dop.uml#_A5_PsCHOEfC7j5ziKZetqQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A7AjYSHOEfC7j5ziKZetqQ"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="__RRksSE5EfC0z_Zbk-HEuQ"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="__RRksiE5EfC0z_Zbk-HEuQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="__RRksyE5EfC0z_Zbk-HEuQ"/>

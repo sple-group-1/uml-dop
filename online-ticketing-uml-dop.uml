@@ -60,9 +60,6 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_o1l_QCDgEfCXKsLM5KbBlw" name="bookingType" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_q4GDMCcaEfCXGemhMC8nNA" name="bookingoptionimpl" type="_ww10sCcZEfCXGemhMC8nNA" aggregation="shared" association="_q4C_4CcaEfCXGemhMC8nNA">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q4GqQScaEfCXGemhMC8nNA" value="*"/>
-          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_3sVKACDgEfCXKsLM5KbBlw" client="_B1HmoCDbEfCXKsLM5KbBlw" supplier="_72WUYCDVEfCXKsLM5KbBlw"/>
       </packagedElement>
@@ -251,6 +248,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pgrNoCHSEfCcw4vRG08oew" name="available" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7CJAMicrEfCXGemhMC8nNA" name="bookingoptionimpl" type="_jahzgCccEfCXGemhMC8nNA" association="_7CIZICcrEfCXGemhMC8nNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7CMqkCcrEfCXGemhMC8nNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7CMqkScrEfCXGemhMC8nNA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_vsgdwCHSEfCcw4vRG08oew" client="_As6VoCHREfCcw4vRG08oew" supplier="_-SjzECHQEfCcw4vRG08oew"/>
       </packagedElement>
@@ -261,6 +262,8 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohBnISHVEfCcw4vRG08oew"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohBnIiHVEfCcw4vRG08oew" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MVQt0icsEfCXGemhMC8nNA" name="bookingoptionimpl" type="_RB0zUCcbEfCXGemhMC8nNA" association="_MVQGwCcsEfCXGemhMC8nNA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gSQnwycsEfCXGemhMC8nNA" name="bookingoptionimpl" type="_vKMDICcdEfCXGemhMC8nNA" association="_gSQnwCcsEfCXGemhMC8nNA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_N6woQCHXEfCcw4vRG08oew" client="_ASR9MCHTEfCcw4vRG08oew" supplier="_iCAHgCHQEfCcw4vRG08oew"/>
       </packagedElement>
@@ -274,6 +277,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gus74CcbEfCXGemhMC8nNA" name="bookingType">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0DaI8icqEfCXGemhMC8nNA" name="bookingitemimpl" type="_B1HmoCDbEfCXKsLM5KbBlw" association="_0DY60CcqEfCXGemhMC8nNA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_l-fP8CcaEfCXGemhMC8nNA" client="_ww10sCcZEfCXGemhMC8nNA" supplier="_sEASICcZEfCXGemhMC8nNA"/>
       </packagedElement>
@@ -285,10 +289,6 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8VfRsScbEfCXGemhMC8nNA" type="_ww10sCcZEfCXGemhMC8nNA" association="_8VeDkCcbEfCXGemhMC8nNA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8VfRsicbEfCXGemhMC8nNA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8VfRsycbEfCXGemhMC8nNA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_KCyyYicgEfCXGemhMC8nNA" name="bookingavailabilityimpl" type="_Yvw_wCHTEfCcw4vRG08oew" association="_KCxkQCcgEfCXGemhMC8nNA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCyyYycgEfCXGemhMC8nNA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCyyZCcgEfCXGemhMC8nNA" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_VPx6ICceEfCXGemhMC8nNA" client="_H2GqoCcbEfCXGemhMC8nNA" supplier="_9Tjj0CcYEfCXGemhMC8nNA"/>
@@ -302,10 +302,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ETTAUycdEfCXGemhMC8nNA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ETTAVCcdEfCXGemhMC8nNA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_9clf0icfEfCXGemhMC8nNA" name="bookingavailbilityimpl" type="_As6VoCHREfCcw4vRG08oew" association="_9ck4wCcfEfCXGemhMC8nNA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9clf0ycfEfCXGemhMC8nNA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9clf1CcfEfCXGemhMC8nNA" value="*"/>
-          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_O6LC8CceEfCXGemhMC8nNA" client="_cy9poCccEfCXGemhMC8nNA" supplier="_9Tjj0CcYEfCXGemhMC8nNA"/>
       </packagedElement>
@@ -317,10 +313,6 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9eWsUicdEfCXGemhMC8nNA" name="bookingoptionimpl" type="_ww10sCcZEfCXGemhMC8nNA" association="_9eWFQCcdEfCXGemhMC8nNA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9eWsUycdEfCXGemhMC8nNA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9eWsVCcdEfCXGemhMC8nNA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zUP94icfEfCXGemhMC8nNA" name="bookingavailabilityimpl" type="_Yvw_wCHTEfCcw4vRG08oew" association="_zUPW0CcfEfCXGemhMC8nNA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YEsm4CcgEfCXGemhMC8nNA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zUQk8ScfEfCXGemhMC8nNA" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_D_mLwCceEfCXGemhMC8nNA" client="_fczkQCcdEfCXGemhMC8nNA" supplier="_9Tjj0CcYEfCXGemhMC8nNA"/>
@@ -461,12 +453,6 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_ohBnIyHVEfCcw4vRG08oew" type="_Yvw_wCHTEfCcw4vRG08oew" association="_og-j0CHVEfCcw4vRG08oew"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_q4C_4CcaEfCXGemhMC8nNA" memberEnd="_q4GDMCcaEfCXGemhMC8nNA _q4GqQicaEfCXGemhMC8nNA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q4FcICcaEfCXGemhMC8nNA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q4FcIScaEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_q4GqQicaEfCXGemhMC8nNA" name="bookingitemimpl" type="_B1HmoCDbEfCXKsLM5KbBlw" association="_q4C_4CcaEfCXGemhMC8nNA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_8VeDkCcbEfCXGemhMC8nNA" memberEnd="_8VfRsScbEfCXGemhMC8nNA _8VfRtCcbEfCXGemhMC8nNA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8VeqoCcbEfCXGemhMC8nNA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8VfRsCcbEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
@@ -485,23 +471,38 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_9eWsVScdEfCXGemhMC8nNA" name="roomoptionimpl" type="_vKMDICcdEfCXGemhMC8nNA" association="_9eWFQCcdEfCXGemhMC8nNA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_zUPW0CcfEfCXGemhMC8nNA" memberEnd="_zUP94icfEfCXGemhMC8nNA _zUQk8icfEfCXGemhMC8nNA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zUP94CcfEfCXGemhMC8nNA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zUP94ScfEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0DY60CcqEfCXGemhMC8nNA" memberEnd="_0DaI8icqEfCXGemhMC8nNA _0DawAicqEfCXGemhMC8nNA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0DaI8CcqEfCXGemhMC8nNA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0DaI8ScqEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_zUQk8icfEfCXGemhMC8nNA" name="roomoptionimpl" type="_vKMDICcdEfCXGemhMC8nNA" association="_zUPW0CcfEfCXGemhMC8nNA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0DawAicqEfCXGemhMC8nNA" name="bookingoptionimpl" type="_ww10sCcZEfCXGemhMC8nNA" association="_0DY60CcqEfCXGemhMC8nNA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6wY-UCcqEfCXGemhMC8nNA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6wgTECcqEfCXGemhMC8nNA" value="*"/>
+      </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_9ck4wCcfEfCXGemhMC8nNA" memberEnd="_9clf0icfEfCXGemhMC8nNA _9clf1ScfEfCXGemhMC8nNA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9clf0CcfEfCXGemhMC8nNA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9clf0ScfEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7CIZICcrEfCXGemhMC8nNA" memberEnd="_7CJAMicrEfCXGemhMC8nNA _7CMqkicrEfCXGemhMC8nNA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7CJAMCcrEfCXGemhMC8nNA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7CJAMScrEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_9clf1ScfEfCXGemhMC8nNA" name="classoptionimpl" type="_jahzgCccEfCXGemhMC8nNA" association="_9ck4wCcfEfCXGemhMC8nNA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_7CMqkicrEfCXGemhMC8nNA" name="bookingavailbilityimpl" type="_As6VoCHREfCcw4vRG08oew" association="_7CIZICcrEfCXGemhMC8nNA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_KCxkQCcgEfCXGemhMC8nNA" memberEnd="_KCyyYicgEfCXGemhMC8nNA _KCyyZScgEfCXGemhMC8nNA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KCyyYCcgEfCXGemhMC8nNA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KCyyYScgEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MVQGwCcsEfCXGemhMC8nNA" memberEnd="_MVQt0icsEfCXGemhMC8nNA _MVQt1ScsEfCXGemhMC8nNA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MVQt0CcsEfCXGemhMC8nNA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MVQt0ScsEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_KCyyZScgEfCXGemhMC8nNA" name="packageoptionimpl" type="_RB0zUCcbEfCXGemhMC8nNA" association="_KCxkQCcgEfCXGemhMC8nNA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MVQt1ScsEfCXGemhMC8nNA" name="bookingavailabilityimpl" type="_Yvw_wCHTEfCcw4vRG08oew" association="_MVQGwCcsEfCXGemhMC8nNA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WTAJUCcsEfCXGemhMC8nNA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WTc1QCcsEfCXGemhMC8nNA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gSQnwCcsEfCXGemhMC8nNA" memberEnd="_gSQnwycsEfCXGemhMC8nNA _gSR14icsEfCXGemhMC8nNA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gSQnwScsEfCXGemhMC8nNA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gSQnwicsEfCXGemhMC8nNA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gSR14icsEfCXGemhMC8nNA" name="bookingavailabilityimpl" type="_Yvw_wCHTEfCcw4vRG08oew" association="_gSQnwCcsEfCXGemhMC8nNA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jA8bkCcsEfCXGemhMC8nNA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ir3jcCcsEfCXGemhMC8nNA" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">

@@ -128,8 +128,8 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_BW5BcCD6EfCTVfc_I9vAmg" name="OrderImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_J3o6gCD6EfCTVfc_I9vAmg" name="orderId" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_T7Y3YCD6EfCTVfc_I9vAmg" name="createdAt" type="_B7Jn4CC0EfCTVfc_I9vAmg"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ylL1wCD7EfCTVfc_I9vAmg" name="amount">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ylL1wCD7EfCTVfc_I9vAmg" name="totalPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_6aWssCFzEfCTVfc_I9vAmg" name="quantity">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>

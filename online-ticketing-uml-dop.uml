@@ -159,7 +159,7 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="__Q5KMCE5EfC0z_Zbk-HEuQ" name="CartItemImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_J1DFcCE6EfC0z_Zbk-HEuQ" name="id" visibility="public" type="_EWlIgCC0EfCTVfc_I9vAmg"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_RJHI8iE6EfC0z_Zbk-HEuQ" name="bookingitemimpl" type="_B1HmoCDbEfCXKsLM5KbBlw" association="_RJGh4CE6EfC0z_Zbk-HEuQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RJHI8iE6EfC0z_Zbk-HEuQ" name="bookingoptionimpl" type="_ww10sCcZEfCXGemhMC8nNA" association="_RJGh4CE6EfC0z_Zbk-HEuQ">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XmD-QCE6EfC0z_Zbk-HEuQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WTIWwCE6EfC0z_Zbk-HEuQ" value="*"/>
           </ownedAttribute>

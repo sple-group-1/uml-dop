@@ -140,10 +140,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DVS5cSc9EfCsWIceI7zgBA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DVS5cic9EfCsWIceI7zgBA" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_FlBgYSc9EfCsWIceI7zgBA" name="bookingoptionimpl" type="_ww10sCcZEfCXGemhMC8nNA" association="_Fk_rMCc9EfCsWIceI7zgBA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FlCHcCc9EfCsWIceI7zgBA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FlCHcSc9EfCsWIceI7zgBA" value="1"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FlBgYSc9EfCsWIceI7zgBA" name="bookingoptionimpl" type="_ww10sCcZEfCXGemhMC8nNA" association="_Fk_rMCc9EfCsWIceI7zgBA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xH4mwCD6EfCTVfc_I9vAmg" client="_BW5BcCD6EfCTVfc_I9vAmg" supplier="_-WdWUCD5EfCTVfc_I9vAmg" contract="_-WdWUCD5EfCTVfc_I9vAmg"/>
         </packagedElement>
       </packagedElement>
@@ -293,6 +290,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8VfRsicbEfCXGemhMC8nNA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8VfRsycbEfCXGemhMC8nNA" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_g00hoDO2EfCnk43lQnqBgg" name="bookingitemimpl" type="_agGT0CD1EfCXKsLM5KbBlw" association="_g0ubADO2EfCnk43lQnqBgg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_VPx6ICceEfCXGemhMC8nNA" client="_H2GqoCcbEfCXGemhMC8nNA" supplier="_9Tjj0CcYEfCXGemhMC8nNA"/>
       </packagedElement>
@@ -505,7 +503,19 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FlASQCc9EfCsWIceI7zgBA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FlBgYCc9EfCsWIceI7zgBA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_FlCugCc9EfCsWIceI7zgBA" name="orderimpl" type="_BW5BcCD6EfCTVfc_I9vAmg" association="_Fk_rMCc9EfCsWIceI7zgBA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FlCugCc9EfCsWIceI7zgBA" name="orderimpl" type="_BW5BcCD6EfCTVfc_I9vAmg" association="_Fk_rMCc9EfCsWIceI7zgBA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b_ACMDO2EfCnk43lQnqBgg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b_XOkDO2EfCnk43lQnqBgg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_g0ubADO2EfCnk43lQnqBgg" memberEnd="_g00hoDO2EfCnk43lQnqBgg _g01IsjO2EfCnk43lQnqBgg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g0xeUDO2EfCnk43lQnqBgg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g0yscDO2EfCnk43lQnqBgg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_g01IsjO2EfCnk43lQnqBgg" name="bookingoptionimpl" type="_RB0zUCcbEfCXGemhMC8nNA" association="_g0ubADO2EfCnk43lQnqBgg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8BrUgDO2EfCnk43lQnqBgg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8CJ1oDO2EfCnk43lQnqBgg" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A6VHsCA-EfCWToQGb7nneg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A6VHsiA-EfCWToQGb7nneg" source="PapyrusVersion">

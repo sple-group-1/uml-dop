@@ -46,10 +46,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2z-q4CDOEfCf3YcdppMP9A"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2z_R8CDOEfCf3YcdppMP9A" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_GdxYUCDREfCf3YcdppMP9A" name="customerimpl" type="_yn6goCCuEfCTVfc_I9vAmg" association="_GdmZMCDREfCf3YcdppMP9A">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gd3e8CDREfCf3YcdppMP9A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GeAo4CDREfCf3YcdppMP9A" value="*"/>
-          </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3FNaQCDNEfCf3YcdppMP9A" name="Like"/>
         </packagedElement>
       </packagedElement>
@@ -328,15 +324,6 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2z8OoSDOEfCf3YcdppMP9A" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_2z_R8SDOEfCf3YcdppMP9A" name="blogimpl" type="_LjvJYCDNEfCf3YcdppMP9A" association="_2z7AgCDOEfCf3YcdppMP9A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_GdmZMCDREfCf3YcdppMP9A" memberEnd="_GdxYUCDREfCf3YcdppMP9A _GeDFICDREfCf3YcdppMP9A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GduVACDREfCf3YcdppMP9A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GdvjICDREfCf3YcdppMP9A" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_GeDFICDREfCf3YcdppMP9A" name="blogimpl" type="_LjvJYCDNEfCf3YcdppMP9A" association="_GdmZMCDREfCf3YcdppMP9A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nP6YsCDREfCf3YcdppMP9A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cq-msCDSEfCf3YcdppMP9A" value="*"/>
-      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-fA2YCDuEfCXKsLM5KbBlw" visibility="protected" memberEnd="_-fBdciDuEfCXKsLM5KbBlw _-fIyMCDuEfCXKsLM5KbBlw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-fBdcCDuEfCXKsLM5KbBlw" source="org.eclipse.papyrus">
